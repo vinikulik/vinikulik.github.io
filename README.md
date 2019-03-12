@@ -1,1 +1,1 @@
-# vinikulik.github.io
+# http://vinikulik.github.io
