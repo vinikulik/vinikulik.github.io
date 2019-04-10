@@ -1,12 +1,3 @@
-html 
-    {
-      min-height: 100%;
-    } 
-     body{
-    /*Here is your body CSS code*/
-    background-size: auto 100%; /*Just add this for full size*/
-
-    }
 * {
   box-sizing: border-box;
 }
@@ -100,7 +91,8 @@ body {
     float: none;
     width: 100%;
   }
-}* {
+}
+* {
   box-sizing: border-box;
 }
 
@@ -231,6 +223,7 @@ img {
 }
 
 body {
+    background-color: linear-gradient(to bottom, #d9b38c, #734d26);
   font-weight: none;
   background-image: linear-gradient(to bottom, #d9b38c, #734d26);
   color: white;
