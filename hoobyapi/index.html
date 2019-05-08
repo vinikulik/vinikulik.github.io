@@ -115,15 +115,8 @@
           $("#p4").text(result.url);
 
         }
-
       });
-
-
-
     });
-
-
-
   });
 
   $(document).ready(function() {
@@ -131,15 +124,13 @@
     $('#modal').on('submit', function(e) {
       e.preventDefault();
       var len1 = $('#usuario').val().length;
-      var len2 = $('#senha').val().length;
-      {
+      var len2 = $('#senha').val().length; {
         localStorage.setItem("usuario", $('#usuario').val());
         this.submit();
       }
     });
 
   });
-
 </script>
 
 <body style="background-image: linear-gradient(to bottom, #e6ccb3, #4d3219); color: white">
@@ -162,7 +153,7 @@
 
       <h1 style="color: black">Teste API</h1>
 
-    </br>
+      </br>
 
       <form name="form1" id="form1">
 
@@ -170,7 +161,7 @@
 
         <input type="text" id="endereco" name="endereco">
 
-      </br></br>
+        </br></br>
 
         <input type="submit" value="ENVIAR" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
 
@@ -210,38 +201,38 @@
           </div>
         </div>
       </div>
-    </div>
-    </center>
+  </div>
+  </center>
 
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
+  <div class="modal fade" id="  myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-          <div class="modal-header">
-            <h4 class="modal-title" style="color:black"><b><ins>Faça seu login para se conectar.</ins></b></h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <div class="modal-body">
-            <form id="meuFormulario" action="pagina2.html">
-              <p style="color:black; font-size: 18px"><b>Usuário :</b></p>
-              <input type="text" style="color:black" name="usuario" value="" id="usuario">
-              </br></br>
-              <p style="color:black;  font-size: 18px"><b>Senha :</b></p>
-              <input type="password" style="color:black" name="senha" value="" id="senha">
-              </br></br>
-              <input type="submit" style="color:black;  font-size: 18px" value="Entrar">
-            </form>
-            </center>
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-          </div>
-
+        <div class="modal-header">
+          <h4 class="modal-title" style="color:black"><b><ins>Faça seu login para se conectar.</ins></b></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
+
+        <div class="modal-body">
+          <form id="meuFormulario" action="pagina2.html">
+            <p style="color:black; font-size: 18px"><b>Usuário :</b></p>
+            <input type="text" style="color:black" name="usuario" value="" id="usuario">
+            </br></br>
+            <p style="color:black;  font-size: 18px"><b>Senha :</b></p>
+            <input type="password" style="color:black" name="senha" value="" id="senha">
+            </br></br>
+            <input type="submit" style="color:black;  font-size: 18px" value="Entrar">
+          </form>
+          </center>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        </div>
+
       </div>
     </div>
+  </div>
 
   </div>
 
