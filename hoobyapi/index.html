@@ -82,6 +82,21 @@
   });
 
 
+
+  $(document).ready(function() {
+
+    $('#modal').on('submit', function(e) {
+      e.preventDefault();
+      var len1 = $('#usuario').val().length;
+      var len2 = $('#senha').val().length; {
+        localStorage.setItem("usuario", $('#usuario').val());
+        this.submit();
+      }
+    });
+
+  });
+
+
   $(document).ready(function() {
 
 
@@ -119,18 +134,6 @@
     });
   });
 
-  $(document).ready(function() {
-
-    $('#modal').on('submit', function(e) {
-      e.preventDefault();
-      var len1 = $('#usuario').val().length;
-      var len2 = $('#senha').val().length; {
-        localStorage.setItem("usuario", $('#usuario').val());
-        this.submit();
-      }
-    });
-
-  });
 </script>
 
 <body style="background-image: linear-gradient(to bottom, #e6ccb3, #4d3219); color: white">
