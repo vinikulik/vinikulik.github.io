@@ -133,7 +133,6 @@
       });
     });
   });
-
 </script>
 
 <body style="background-image: linear-gradient(to bottom, #e6ccb3, #4d3219); color: white">
@@ -146,98 +145,73 @@
 
   </div>
   <div class="container">
-    <center>
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="width:440px; font-size: 24px; background: indigo"><b><ins>
-            Clique aqui para realizar seu Login</b></ins>
-      </button></center>
 
-    </br>
-    <center>
-
-      <h1 style="color: black">Teste API</h1>
-
-      </br>
-
-      <form name="form1" id="form1">
-
-        URL:
-
-        <input type="text" id="endereco" name="endereco">
-
+      <form id="meuFormulario" action="pagina2.html">
+        <p style="color:black; font-size: 18px"><b>Usuário :</b></p>
+        <input type="text" style="color:black" name="usuario" value="" id="usuario">
         </br></br>
-
-        <input type="submit" value="ENVIAR" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-
+        <p style="color:black;  font-size: 18px"><b>Senha :</b></p>
+        <input type="password" style="color:black" name="senha" value="" id="senha">
+        </br></br>
+        <input type="submit" style="color:black;  font-size: 18px" value="Entrar">
       </form>
 
-      <br><br>
+  <center>
+
+    <h1 style="color: black">Teste API</h1>
+
+    </br>
+
+    <form name="form1" id="form1">
+
+      URL:
+
+      <input type="text" id="endereco" name="endereco">
+
+      </br></br>
+
+      <input type="submit" value="ENVIAR" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+
+    </form>
+
+    <br><br>
 
 
 
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
-            <div class="modal-header">
-              <h4 class="modal-title" style="color:black"><b><ins>Informações sobre o site.</ins></b></h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
+          <div class="modal-header">
+            <h4 class="modal-title" style="color:black"><b><ins>Informações sobre o site.</ins></b></h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
 
-            <div class="modal-body">
+          <div class="modal-body">
 
-              <p id="p1" style="color: black"></p>
+            <p id="p1" style="color: black"></p>
 
-              <p id="p2" style="color: black"></p>
+            <p id="p2" style="color: black"></p>
 
-              <img id="p3" src="" style="border: 00px;
+            <img id="p3" src="" style="border: 00px;
               border-radius: 00px;">
 
-              <p id="p4" style="color: black"></p>
-
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-
-            </div>
+            <p id="p4" style="color: black"></p>
 
           </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+
+          </div>
+
         </div>
-      </div>
-  </div>
-  </center>
-
-  <div class="modal fade" id="  myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h4 class="modal-title" style="color:black"><b><ins>Faça seu login para se conectar.</ins></b></h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <div class="modal-body">
-          <form id="meuFormulario" action="pagina2.html">
-            <p style="color:black; font-size: 18px"><b>Usuário :</b></p>
-            <input type="text" style="color:black" name="usuario" value="" id="usuario">
-            </br></br>
-            <p style="color:black;  font-size: 18px"><b>Senha :</b></p>
-            <input type="password" style="color:black" name="senha" value="" id="senha">
-            </br></br>
-            <input type="submit" style="color:black;  font-size: 18px" value="Entrar">
-          </form>
-          </center>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        </div>
-
       </div>
     </div>
-  </div>
+    </div>
+  </center>
+</div>
 
-  </div>
 
   <div class="container leftcolumn">
     <a href="index.html"><span class="glyphicon glyphicon-home imageleft" style="font-size:34px; color:black;padding-right: 10px;">&nbsp;<b><ins>Início</ins></b></span></a>
