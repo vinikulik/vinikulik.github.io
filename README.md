@@ -6,4 +6,4 @@
 # https://vinikulik.github.io/projetointegrado
 # https://vinikulik.github.io/hoobybootstrap
 # https://vinikulik.github.io/hoobyapi
-# https://vinikulik.github.io/hobymap
+# https://vinikulik.github.io/hobbymap
