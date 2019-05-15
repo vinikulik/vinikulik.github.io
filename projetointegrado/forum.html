@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+  <link rel="shortcut icon" href="image/logo.jpeg" type="image/x-png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+.card{
+  background-color: transparent;
+  border: 00px;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  color: white;
+}
+.right {
+  background-color: transparent;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+.borda{
+    border: 4px solid #f1f1f1;
+     margin: 10px;
+     padding: 10px;
+}
+</style>
+</head>
+<script src="js/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('#meuFormulario').on('submit', function(e){
+          e.preventDefault();
+          var len1 = $('#usuario').val().length;
+          var len2 = $('#senha').val().length;
+          if (len1 > 0 && len2 > 0) {
+              localStorage.setItem("usuario", $('#usuario').val());
+              localStorage.setItem("senha", $('#senha').val());
+              this.submit();
+          }else{
+            alert("Nome e/ou Senha Inválida")
+          }
+      });
+
+});
+</script>
+<body style="font-family:Verdana; background-image: linear-gradient( #99ccff, #009973, indigo);">
+
+<div style="padding:15px; color: white;">
+  <center>
+  <img src="images/logo55.png" style="width:22%;">
+  </br></br>
+  <h2><ins></ins></h2>
+  </center>
+</div>
+</br>
+<div style="overflow:auto;">
+  <div class="menu" style="overflow:auto;">
+    <center>
+    <div class="menuitem"><a href="index.html" style="color: white"><b>Página Principal</b></a></div>
+    <div class="menuitem"><a href="quemsomos.html"style="color: white;"><b>Quem Somos</b></a></div>
+    <div class="menuitem"><a href="eventos.html"style="color: white"><b>Eventos</b></a></div>
+    <div class="menuitem"><a href="forum.html"style="color: white"><b>Fórum</b></a></div>
+    <div class="menuitem"><a href="faq.html"style="color: white"><b>FAQ</b></a></div>
+    <div class="menuitem"><a href="sr.html"style="color: white"><b>Sugestões e Reclamações</b></a></div>
+</br>
+  <img src="images/17.png" height="500" width="280">
+    </center>
+  </div>
+
+  <div class="main">
+    <center>
+
+      <a href="forum2.html">
+<img src="images/lupa.png" style="width:4%" href="eventos2.html"></a> &nbsp;<input type="text" style="color:black" >
+</br>
+<img src="images/2forum2.png" width="500">
+</br></br>
+
+    <div class="borda">
+    <p>Discussão 1: </p>
+    </br>
+    <p>Discussão 2: </p>
+  </br>
+    <p>Discussão 3: </p>
+    </br>
+    <p>Discussão 4: </p>
+    </div>
+</center>
+  </div>
+
+  <div class="right">
+    <center>
+    <div class="menuitem"> <h2 style="font-size: 26px; color: #990099;  text-shadow: 1px 1px 4px #ffffff; "><a href="cadastro.html"><b>Faça seu Cadastro aqui</b></a></h2>
+    </div>
+     </br>
+    <div class="rightcolumn">
+       <div class="card">
+
+         <h2 style="font-size: 26px; color: #990099;  text-shadow: 1px 1px 4px #ffffff; "><b><ins>Área de LOGIN</b></ins></h2>
+</br>
+         <form id="meuFormulario" action="pplogado.html">
+         <p style="color:black; font-size: 18px"><b>Usuário :</b></p>
+         <input type="text" style="color:black" name="usuario" value="" id="usuario">
+       </br></br>
+         <p style="color:black;  font-size: 18px"><b>Senha :</b></p>
+         <input type="password" style="color:black" name="senha" value="" id="senha">
+       </br></br>
+         <input type="submit" style="color:black;  font-size: 18px" value="Entrar">
+         </form>
+   </br></br></br></br></br>
+
+    </center>
+  </div>
+</div>
+
+
+<div style="text-align:right;padding:10px;margin-top:7px;font-size:12px;"> <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511971362765"><img src="images/fale.jpg" style="width:10%"></a></div>
+
+</body>
+</html>
