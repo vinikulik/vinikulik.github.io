@@ -7,3 +7,4 @@
 # https://vinikulik.github.io/hoobybootstrap
 # https://vinikulik.github.io/hoobyapi
 # https://vinikulik.github.io/hobbymap
+# https://vinikulik.github.io/hobbychat
